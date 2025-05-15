@@ -1,0 +1,58 @@
+### 测试获取乘客轨迹点
+GET http://localhost:3000/track/getpassengerpoints
+Accept: application/json
+
+### 测试获取司机轨迹点
+GET http://localhost:3000/track/getdriverpoints
+Accept: application/json
+
+
+### 测试获取订单轨迹点
+GET http://localhost:3000/track/getpointsbyorder?id=789
+Accept: application/json
+
+### 测试获取订单距离
+GET http://localhost:3000/track/getdistancebyorder?id=789
+Accept: application/json
+
+### 测试获取订单价格
+GET http://localhost:3000/track/getpricebyorder?id=789
+Accept: application/json
+
+### 测试获取热点区域
+GET http://localhost:3000/track/gethotpoints
+?starttime=2023-01-01 08:00:00
+&endtime=2023-01-01 09:00:00
+Accept: application/json
+
+### 测试更新更新乘客位置
+POST http://localhost:3000/passenger/updatelocation
+Content-Type: application/json
+
+### 测试贪心派单匹配
+POST http://localhost:3000/track/dispatch_matching
+Content-Type: application/json
+
+###测试基于h3格网的贪心匹配
+POST http://localhost:3000/track/dispatch_matching_h3
+Content-Type: application/json
+
+###测试基于h3格网的贪心匹配dev
+POST http://localhost:3000/track/dispatch_matching_h3_dev
+Content-Type: application/json
+
+
+
+### 测试路网距离计算
+POST http://localhost:3000/track/route_distance
+Content-Type: application/json
+
+{
+  "origin": { "lat": 39.915, "lng": 116.404 },
+  "destination": { "lat": 39.985, "lng": 116.481 }
+}
+
+
+# ### 测试根据出租车查司机
+# GET http://localhost:3000/track/getdriverbytaxiID?id=456
+# Accept: application/json

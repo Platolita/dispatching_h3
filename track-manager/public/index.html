@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="./favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/antd@2.7.1/dist/antd.min.css" rel="stylesheet">
+        <!--↑antd->ant design(UI设计语言&React的实现),-->
+
+    <title>React App</title>
+
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=3.0&ak=0AbSlkh4aF4KNKcYcjFYtKkZOF2kEXde">
+        //v2.0版本的引用方式：src="http://api.map.baidu.com/api?v=2.0&ak=0AbSlkh4aF4KNKcYcjFYtKkZOF2kEXde"
+        //v1.4版本及以前版本的引用方式：src="http://api.map.baidu.com/api?v=1.4&key=0AbSlkh4aF4KNKcYcjFYtKkZOF2kEXde&callback=initialize"
+        //↑百度地图API
+    </script>
+    <script src="http://api.map.baidu.com/getscript?type=quick&file=feature&ak=0AbSlkh4aF4KNKcYcjFYtKkZOF2kEXde"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/library/Heatmap/2.0/src/Heatmap_min.js"></script>
+        <!--百度地图热力图API-->
+        <script src="https://cdn.bootcdn.net/ajax/libs/echarts/3.6.1/echarts.min.js"></script>
+        <!--//Echarts->数据可视化库-->
+  </head>
+
+  <body>
+    <div id="root"></div><!--开辟DOM的“根节点”，作为React渲染的目标-->
+    <script src="//cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+        <!--jQuery->简化许多操作的JS库-->
+    <script src="bundle.js"></script>
+  </body>
+
+
+</html>

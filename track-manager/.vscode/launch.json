@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Debug portfile(s)",
+            "program": "${workspaceFolder}/path/to/your/script.js",
+            "preLaunchTask": "Debug vcpkg commands"
+        }
+    ]
+}
